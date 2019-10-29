@@ -1,6 +1,6 @@
 function monkey(){
     let  total = document.getElementById("monkeytotal").value
-    let kick = document.getElementById("monkeytick").value
+    let kick = document.getElementById("monkeykick").value
     total = parseInt(total) && Number(total)
     kick = parseInt(kick) &&Number(kick)
     if(isNaN(total)||isNaN(kick)){
@@ -8,14 +8,14 @@ function monkey(){
         return
     }
     let monkey=[]
-    for (let i=1;i<=total;i++){
+    for (let i=1;i<=total;i++ ){
         monkey.push(i)
     }
     let i=0
     while (monkey.length>1){
         i++;
-        head -= monkey.shift()
-        if(1%kick!=0){
+        head = monkey.shift()
+        if(i%kick!=0){
             monkey.push(head);
         }
     }
