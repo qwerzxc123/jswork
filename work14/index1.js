@@ -31,7 +31,7 @@ var count = {
 };
 var now = lamp.green;
 var timeout = now.timeout;
-lamp.cangeStyle (now.style);
+lamp.changeStyle(now.style)
 count.change(timeout);
 setInterval(function() {
     if (--timeout <= 0) {
