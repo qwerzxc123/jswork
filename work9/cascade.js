@@ -94,7 +94,6 @@ collegeSelect.onchange = function () {
         classSelect.options.length = 0;
     }
 };
-//第三步
 let classSelect= document.getElementById('classSelect');
 majorSelect.onchange = function () {
     classSelect.options.length = 0;
