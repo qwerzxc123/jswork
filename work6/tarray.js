@@ -13,5 +13,4 @@ for(var i in arr){
         ++index;
     }
 }
-//显示提取后的数组
 document.getElementById('transArray').innerHTML = newArr.toString()
